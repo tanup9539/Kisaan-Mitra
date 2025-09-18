@@ -216,9 +216,12 @@ h2 {
 
 .all-cards{
     margin: 20px;
+    display: flex;
+    
 }
 .card {
     width: 100%;
+    margin:8px;
     max-width: 400px;   
     border-radius: 12px;
     overflow: hidden;
