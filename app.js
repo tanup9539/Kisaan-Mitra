@@ -12,7 +12,7 @@ app.use(expressLayout)
 app.set('layout','./layouts/main')
 app.set('view engine', 'ejs');
 
-const PORT = 5123 || process.env.PORT;
+const PORT =process.env.PORT || 5123;
 
 app.use('/', require('./server/routes/main'))
 

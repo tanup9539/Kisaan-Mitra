@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+
+    width:100%;
+    min-height: 100vh;
+
+}
+
+.set-margin{
+    margin:0px 200px;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+    padding: 0 80px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #4e7145; 
+    color: white;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic-container {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    /* This can be a placeholder or an actual image */
+    position: relative;
+}
+
+.profile-pic::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4e7145; /* Same as header background */
+    border-radius: 50%;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-pic::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: #4e7145; /* Same as header background */
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user-info h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:last-of-type {
+    border-bottom: none;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.edit-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.edit-btn i {
+    margin-right: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    color: #888;
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    width: 600px;
+    font-size: 0.6rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.confirm-btn{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding:8px;
+    font-size: 15px;
+}
+
+.confirm-btn:hover{
+    background-color: #4e7145;
+    color:white;
+    cursor:pointer;
+}
+
+/* Discussion page */
+.discussion-header{
+    background-color: #eb9c35;
+}
+
+.discussion{
+    background-color: #eb9c35;
+    justify-content: space-between;
+}
+
+.leaf-image{
+    width:200px;
+}
+
+.discussion .input-group{
+    margin:0px 40px;
+    border: 3px solid rgb(46, 45, 45);
+    
+    
+}
+
+.discussion .input-group i{
+    font-size: 24px;
+    color:rgb(56, 54, 54);  
+}
+
+.discussion .input-group input{
+    background:none;
+    flex-grow: 1;
+    font-size: 2rem;
+    padding:0px 50px;
+    color:black;
+}
+
+.discuss{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.discuss i{
+    font-size:50px;
+    color:#4e7145;
+}
+.discuss button{
+    margin: 8px;
+    width:max-content;
+    background-color: #4e7145;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+
+.all-cards{
+    margin: 20px;
+}
+.card {
+    width: 100%;
+    max-width: 400px;   
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e7145;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #3b5836;
+}
